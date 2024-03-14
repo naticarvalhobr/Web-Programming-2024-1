@@ -26,4 +26,4 @@ let l = j / k
 
 console.log(`Resultado da divisão entre ${j} e ${k}: ${l}`) // template string: dentro da string, coloca as variáveis com operador especial
 
-console.log('Resultado da soma entre ' + a + ' e ' + b + ' = ' + c) // concatenando , o que pode trazer mais erros
+console.log('Resultado da soma entre ' + a + ' e ' + b + ' = ' + c) // concatenando, o que pode trazer mais erros

@@ -14,7 +14,7 @@ console.log('Cadastro: ${nome1} - ${cpf1}')
 let pessoa1 = { //variavel do objeto pode-se infinitas propriedades. Nesse exemplo "nome" e "cpf" são essas propriedades do object
     nome: "Juliana",
     cpf: 123,
-    endereco: {//é possível que uma propriedade seja um object dentro de um object
+    endereco: { //é possível que uma propriedade seja um object dentro de um object
         nomeRua: "Faria Lima",
         cep: 1333 
     }

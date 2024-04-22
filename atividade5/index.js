@@ -15,14 +15,12 @@ app.get('/listar', function (req, res) {
     res.send(estoque.listarProdutos())
 })
 
-app.get('/editar/:id/:novoNome/:novaQtd', function(req, res){
+app.get('/editar/:id/:novaQtd', function(req, res){
     let id = req.params.id
-    let novoNome = req.params.novoNome
     let novaQtd = req.params.novaQtd
 
     let prodExist = estoque.buscarProduto(id)
     if (prodExist) {
-        prodExist.nome = novoNome
         prodExist.qtd = novaQtd
         res.send(prodExist)
     } else {

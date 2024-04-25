@@ -24,9 +24,18 @@ function removerProduto(id) {
     });
 }
 
+function editarProduto(id, qtd){
+    produtos.forEach(p => { // Percorrer lista de produtos
+        if(p.id == id) { // O produto da lista é igual ao que quer editar
+            p.qtd = qtd // altera a qtd do produto que quer editar
+        }
+    });
+}
+
 module.exports = {
     criarProduto,
     adicionarProduto,
     listarProdutos,
-    removerProduto
+    removerProduto,
+    editarProduto
 };
